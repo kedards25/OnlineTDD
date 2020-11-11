@@ -1,0 +1,14 @@
+package com.learning.tdddemo.classes;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestNoTdd {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

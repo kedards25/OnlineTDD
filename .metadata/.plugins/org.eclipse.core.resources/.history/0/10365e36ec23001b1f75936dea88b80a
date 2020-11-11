@@ -1,0 +1,15 @@
+package com.learning.tdddemo.classes;
+
+public class Tdd {
+
+	public int addNums(int i, int j) {
+		// TODO Auto-generated method stub
+		return i+j;
+	}
+
+	public int subtractNums(int i, int j) {
+		// TODO Auto-generated method stub
+		return i-j;
+	}
+
+}

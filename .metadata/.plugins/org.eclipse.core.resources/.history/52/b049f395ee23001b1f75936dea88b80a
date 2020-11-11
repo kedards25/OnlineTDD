@@ -1,0 +1,74 @@
+package com.learning.tdddemo.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import com.learning.tdddemo.classes.Tdd;
+
+public class TestTdd {
+
+	Tdd tdd=new Tdd();
+	
+//	@BeforeClass
+//	public static void setUpBeforeClass() throws Exception {
+//		System.out.println("from setUpBeforeClass");
+//	}
+//
+//	@AfterClass
+//	public static void tearDownAfterClass() throws Exception {
+//		System.out.println("from tearDownAfterClass");
+//	}
+//
+	@Before
+	public void setUp() throws Exception {
+		tdd.id=101;
+		tdd.name="Kedar";
+	}
+//
+//	@After
+//	public void tearDown() throws Exception {
+//		System.out.println("from tearDown\n");
+//	}
+
+	@Ignore
+	public void testAdd() {
+		System.out.println("from testAdd");
+		int res=tdd.addNums(5,7);
+		assertEquals(12, res);
+	}
+	
+	@Ignore
+	public void testSubtract()
+	{
+		System.out.println("from testSubtract");
+		int ans=tdd.subtractNums(7,5);
+		assertEquals(3, ans);
+	}
+	
+	@Ignore
+	@Test(expected =ArithmeticException.class)
+	public void testDivide()
+	{
+		System.out.println("from testDivide");
+		int res=tdd.divide(5,0);
+	}
+	
+	@Test
+	public void testSame()
+	{
+		System.out.println("from testSame");
+		Tdd newObj=new Tdd();
+		Tdd rcvdObj=tdd.saveData(tdd);	//rcvdObj=>td;
+		assertSame(tdd, rcvdObj);
+		assertSame(newObj, rcvdObj);
+		
+	}
+	
+
+}

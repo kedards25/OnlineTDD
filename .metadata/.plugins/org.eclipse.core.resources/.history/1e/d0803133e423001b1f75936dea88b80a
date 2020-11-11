@@ -1,0 +1,14 @@
+package com.learning.tdddemo.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestNoTdd {
+
+	@Test	//states that following method needs to be tested
+	public void testAdd() {
+		
+	}
+
+}
