@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Professional\NIIT\Online Sessions\TDD\CrudTdd\src\test\java\com\learning\crudtdd\CrudTests.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,12 +26,20 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.learning.crudtdd"/>
+			<item value="com.learning.crudtdd.CrudTdd"/>
+			<item value="com.learning.testsuitedemo"/>
 			<item value="com.learning.tdddemo"/>
 		</list>
 		<list key="groupId">
+			<item value="com.learning.crudtdd"/>
+			<item value="com.learning.testsuitedemo"/>
 			<item value="com.learning.tdddemo"/>
 		</list>
 		<list key="artifactId">
+			<item value="SampleDemo"/>
+			<item value="CrudTdd"/>
+			<item value="TestSuiteDemo"/>
 			<item value="TddDemo"/>
 		</list>
 		<list key="projectNameTemplate">
