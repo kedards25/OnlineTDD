@@ -1,0 +1,51 @@
+Requirement gathering
+Analysis
+Design
+Development
+Testing
+Deployment
+Maintainance
+
+a=5 
+b=7
+a+b=??
+
+a+b=12
+and value of a=5
+
+Through unit testing we can develop the code by comparing expected and actual o/p
+
+int addNums()
+{
+a=5;
+b=7;
+c=a+b;
+return c;
+}
+ 
+
+void testAddNums()
+{
+	int res=addNums();
+}
+
+Maven is an online repository where all the java dependencies/plugins/libraries are listed
+you can copy the code/configuration and paste in your application to make it portable
+
+When you port the project from one computer to other,you have to update maven on other computer.Updating maven will check for the dependencies listed and download the missing dependencies from your computer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
